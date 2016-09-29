@@ -10,7 +10,7 @@ class hosts($host_ip='UNSET',
     fail("Module ${module_name} does not support ${::operatingsystem}")
   }
 
-  if ! ($::lsbdistcodename in ['lenny', 'squeeze', 'maverick', 'natty', 'precise']) {
+  if ! ($::lsbdistcodename in ['lenny', 'squeeze', 'maverick', 'natty', 'precise', 'xenial']) {
     fail("Module ${module_name} does not support ${::lsbdistcodename}")
   }
 
